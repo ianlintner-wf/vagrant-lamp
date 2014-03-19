@@ -10,9 +10,9 @@ Download and install [VirtualBox](http://www.virtualbox.org/)
 
 Download and install [vagrant](http://vagrantup.com/)
 
-Download a vagrant box (name of the box is supposed to be precise32)
+Download a vagrant box (name of the box is supposed to be precise64)
 
-    $ vagrant box add precise32 http://files.vagrantup.com/precise32.box
+    $ vagrant box add precise64 http://files.vagrantup.com/precise64.box
 
 Clone this repository
 
@@ -29,7 +29,7 @@ Installed software:
 * Apache
 * MySQL
 * php
-* phpMyAdmin
+* X phpMyAdmin
 * Xdebug with Webgrind
 * zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * git, subversion
@@ -39,20 +39,20 @@ Installed software:
 * Phing
 * Drupal utils:
     * [Drush](http://drupal.org/project/drush)
-* Wordpress utils:
-    * [WP-Cli](http://wp-cli.org/)
-    * [wp2github.py](http://github.com/r8/wp2github.py)
-* Magento utils:
-    * [n98-magerun](https://github.com/netz98/n98-magerun)
-    * [modman](https://github.com/colinmollenhour/modman)
-    * [modgit](https://github.com/jreinke/modgit)
-* Node.js with following packages:
-    * [CoffeeScript](http://coffeescript.org)
-    * [Grunt](http://gruntjs.com/)
-    * [Bower](http://bower.io)
-    * [Yeoman](http://yeoman.io)
-    * [LESS](http://lesscss.org)
-    * [CSS Lint](http://csslint.net)
+* X Wordpress utils:
+    * X [WP-Cli](http://wp-cli.org/)
+    * X [wp2github.py](http://github.com/r8/wp2github.py)
+* X Magento utils:
+    * X [n98-magerun](https://github.com/netz98/n98-magerun)
+    * X [modman](https://github.com/colinmollenhour/modman)
+    * X [modgit](https://github.com/jreinke/modgit)
+* X Node.js with following packages:
+    * X [CoffeeScript](http://coffeescript.org)
+    * X [Grunt](http://gruntjs.com/)
+    * X [Bower](http://bower.io)
+    * X [Yeoman](http://yeoman.io)
+    * X [LESS](http://lesscss.org)
+    * X [CSS Lint](http://csslint.net)
 
 Notes
 -----
