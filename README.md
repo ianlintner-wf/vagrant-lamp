@@ -119,13 +119,13 @@ Create a virtual hosts file in /etc/apache2/sites-available
 
 	sudo nano site.local
 
-<VirtualHost *:80>
-    DocumentRoot /var/sites/site
-    ServerName site.local
-    RewriteEngine On
-    RewriteOptions inherit
-    CustomLog /var/log/apache2/site.log combined
-</VirtualHost>
+	<VirtualHost *:80>
+    	DocumentRoot /var/sites/site
+    	ServerName site.local
+    	RewriteEngine On
+    	RewriteOptions inherit
+    	CustomLog /var/log/apache2/site.log combined
+	</VirtualHost>
 
 
 ### Enable the site
@@ -133,3 +133,15 @@ Create a virtual hosts file in /etc/apache2/sites-available
 
 ### Reload apache2
  sudo /etc/init.d/apache2 reload
+ 
+### Database Connection
+Connect via ssh tunnel
+
+	ssh ip: 192.168.32.42
+	username: vagrant
+	password: vagrant
+	
+	mysql ip: 127.0.0.1
+	username: root
+	password: vagrant
+
