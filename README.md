@@ -145,3 +145,5 @@ Connect via ssh tunnel
 	username: root
 	password: vagrant
 
+### Up PHP Memory Limit
+	sudo sed -i 's/memory_limit = .*/memory_limit = 512M/' /etc/php5/apache2/php.ini
