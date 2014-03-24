@@ -113,3 +113,23 @@ All emails sent by PHP are intercepted by MailCatcher. So normally no email woul
 ### Composer
 
 Composer binary is installed globally (to `/usr/local/bin`), so you can simply call `composer` from any directory.
+
+### Drupal Virtual Hosts
+Create a virtual hosts file in /etc/apache2/sites-available
+
+	sudo nano site.local
+
+<VirtualHost *:80>
+    DocumentRoot /var/sites/site
+    ServerName site.local
+    RewriteEngine On
+    RewriteOptions inherit
+    CustomLog /var/log/apache2/site.log combined
+</VirtualHost>
+
+
+### Enable the site
+ sudo a2ensite site
+
+### Reload apache2
+ sudo /etc/init.d/apache2 reload
