@@ -127,6 +127,9 @@ Create a virtual hosts file in /etc/apache2/sites-available
     	CustomLog /var/log/apache2/site.log combined
 	</VirtualHost>
 
+or download this quick and easy bash script to create vhosts in this vagrant box
+
+	<script src="https://gist.github.com/ianlintner-wf/9745407.js"></script>
 
 ### Enable the site
  sudo a2ensite site
