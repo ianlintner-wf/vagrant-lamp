@@ -25,13 +25,14 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.33.42"
 
   # Set share folder permissions to 777 so that apache can write files
-  config.vm.synced_folder "../", "/var/www", mount_options: ['dmode=777','fmode=666']
+  config.vm.synced_folder "../", "/var/sites", mount_options: ['dmode=777','fmode=666']
+  config.vm.provision :shell, :path => "bootstrap.sh"
 
   # Provider-specific configuration so you can fine-tune VirtualBox for Vagrant.
   # These expose provider-specific options.
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM. For example to change memory:
-    vb.customize ["modifyvm", :id, "--memory", "8192", "--cpus", "6", "--ioapic", "on"]
+    vb.customize ["modifyvm", :id, "--memory", "4096", "--cpus", "4", "--ioapic", "on"]
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
@@ -49,7 +50,7 @@ Vagrant.configure("2") do |config|
     #chef.add_recipe "vagrant_main::nodejs"
    
 
-    chef.add_recipe "drupaldb"
+    #chef.add_recipe "drupaldb"
    
   end
 end

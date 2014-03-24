@@ -4,3 +4,6 @@
 [submodule "cookbooks/drupaldb"]
 	path = cookbooks/drupaldb
 	url = git@github.com:ianlintner-wf/drupaldb.git
+[submodule "cookbooks/chef-dotdeb"]
+	path = cookbooks/chef-dotdeb
+	url = https://github.com/homemade/chef-dotdeb
